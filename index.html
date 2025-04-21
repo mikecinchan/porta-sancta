@@ -1,0 +1,807 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paroki Directory</title>
+    <style>
+        body {
+            background-color: #0a0f2c;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .card a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .field-label {
+            font-weight: bold;
+            color: #4a9eff;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-bottom: 20px;">
+        <a href="https://www.iubilaeum2025.va/it/giubileo-2025/preghiera/indonesiano.html" target="_blank" style="color: #4a9eff; text-decoration: none;">Doa Tahun Yubileum</a>
+    </div>
+<body>
+    <div style="margin-bottom: 20px;">
+        <a href="https://www.gerejasanta.org/2025" target="_blank" style="color: #4a9eff; text-decoration: none;">Tata Cara Porta Sancta</a>
+    </div>
+
+<body>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+
+    <div class="container" id="parokiContainer">
+        <!-- Example card -->
+        <div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Katedral Jakarta</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Perawan Maria Diangkat Ke Surga</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://katedraljakarta.or.id/" class="website" target="_blank">https://katedraljakarta.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Katedral No.7B, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/4pUzoBcemeQTTyt26" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+        <div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cempaka Putih</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Paskalis</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://gerejapaskalis.or.id/" class="website" target="_blank">https://gerejapaskalis.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Letjen Suprapto No.Kav C1/23, Cemp. Putih Bar., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10520</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/HqZCD9ZKPgRVtMUy6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+       <div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Ekspatriat</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Saint Peter Canisius</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.expatcatholicparish.org/" class="website" target="_blank">https://www.expatcatholicparish.org//</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Menteng Raya No.64, RT.3/RW.9, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/SJUeiepxQPmVDndVA" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+        <div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Jalan Malang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Ignatius Loyola</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://linktr.ee/stignatiusloyola?fbclid=PAZXh0bgNhZW0CMTEAAad-6jeJEABVtY9JRQHeXnFWvEYEnd_HYwLlU7kJ9NcLGI5mT_aqEvaAbX8l-Q_aem_jaBJf0cJC4C6Ev3rIJ9cNg" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Latuharhary No.13 8, RT.8/RW.7, Menteng, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/aSSSAshQV9AufMZm7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kramat</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Hati Kudus</span></p>
+            <p><span class="field-label">Website:</span> <a href="http://www.gerejahatikudus.or.id/" class="website" target="_blank">http://www.gerejahatikudus.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Kramat Raya No. 134  RT 1/ RW 9
+
+Jakarta Pusat 10430</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://goo.gl/maps/USZcNHZ5uTnpfU9x6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Menteng</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Theresia</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.gerejatheresia.org/" class="website" target="_blank">https://www.gerejatheresia.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Gereja Theresia No.2, RT.8/RW.4, Gondangdia, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/g6BuhL3sJVSWNvRy5" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Pusat</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pejompongan</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Kristus Raja</span></p>
+            <p><span class="field-label">Website:</span> <a href="http://www.kristusraja.com" class="website" target="_blank">http://www.kristusraja.com</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl.Danau Toba no.56, Pejompongan, Jakarta 10210</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/tVTEgoPh5wu9cFH78" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cideng</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Maria Bunda Perantara</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokicideng.or.id/" class="website" target="_blank">https://parokicideng.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Tanah Abang II No.105, RT.1/RW.1, Cideng, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10150</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/AjMTX8nubiJcYMfP6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kampung Duri</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Damai Kristus</span></p>
+            <p><span class="field-label">Website:</span> <a href="#" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Duri Selatan V No.29 14, RT.14/RW.2, Duri Sel., Kec. Tambora, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11270</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/1rhZqowvFkPdKsi36" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kemakmuran</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Bunda Hati Kudus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokibhk.com/" class="website" target="_blank">https://www.parokibhk.com/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. KH. Hasyim Ashari No.28 3, RT.3/RW.2, Petojo Utara, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10130</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/UPasyVaaPAZoE5Ja9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Mangga Besar</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Petrus dan Paulus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokimanggabesar.or.id/" class="website" target="_blank">https://parokimanggabesar.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Raya Mangga Besar No.55 1, RT.1/RW.3, Tangki, Kec. Taman Sari, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11170</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/hiysYFiJgPDByfxc6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Slipi</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Kristus Salvator</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.salvatorslipi.org/" class="website" target="_blank">https://www.salvatorslipi.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jalan Karel Satsuit Tubun No.128 2, RT.2/RW.7, Slipi, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11420</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/mTjPGUxQNZuWTv9V7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Toasebio</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Maria de Fatima</span></p>
+            <p><span class="field-label">Website:</span> <a href="#" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Kemenangan III No.47 3, RT.3/RW.2, Glodok, Kec. Taman Sari, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11120</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/QeEVGmuXgzQS1obx6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Bojong Indah</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Thomas Rasul</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://sathora.or.id/" class="website" target="_blank">https://sathora.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Pakis Raya No.22, RT.10/RW.7, Rw. Buaya, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11740</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/1T4rXV4iswo1iw116" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cengkareng</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Trinitas</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.trinitas.or.id/" class="website" target="_blank">https://www.trinitas.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Utama III No.23, RT.11/RW.3, Cengkareng Bar., Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/CDQhcFvqwitfNEzi7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Grogol</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Kristoforus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokigrogolkaj.or.id/" class="website" target="_blank">https://www.parokigrogolkaj.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Satria IV No.68 Blok C, RT.12/RW.4, Jelambar, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11460</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/UDkhJ6jfifPqpRGC6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kalideres</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Maria Imakulata</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://gerejasmi.or.id/" class="website" target="_blank">https://gerejasmi.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Citra Garden 3 Blok B 27
+Kalideres, Jakarta Barat – 11830</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/NC7mTcpBYyZjSTfq7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kapuk</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Philipus Rasul</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://phiras.or.id/" class="website" target="_blank">https://phiras.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jalan Teluk Gong Raya No.19 BC, Jl. Teluk Gong Raya 12, RT.12/RW.10, Pejagalan, Penjaringan, North Jakarta City, Jakarta 14450</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/oL8ee2TWeCz83u4H7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kedoya</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Andreas</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://standreaskedoya.or.id/" class="website" target="_blank">https://standreaskedoya.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Komp. Green Garden No.1 Blok J5, RT.1/RW.4, Kedoya Utara, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11520</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/5yryKm9SBVeZVcpd9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kosambi Baru</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Matias Rasul</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokikosambibaru.or.id/" class="website" target="_blank">https://parokikosambibaru.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Perum Kosambi Baru Jl. Taman Kosambi Bar. No.120 Blok A Ext. 1, Duri Kosambi, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11750</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/zLLQF2UfVePuDRpu7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Meruya</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Maria Kusuma Karmel</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://mkk.or.id/" class="website" target="_blank">https://mkk.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Kusuma No.1, RT.2/RW.6, Meruya Sel., Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11650</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/jFXf8arF3Q6qAz7K8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Barat II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Tomang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Maria Bunda Karmel</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokimbk.or.id/" class="website" target="_blank">https://www.parokimbk.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Karmel Raya No.2, RT.2/RW.4, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/BNAss5n86d7oKhqTA" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Selatan</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Blok B</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Yohanes Penginjil</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokiblokb.org/" class="website" target="_blank">https://parokiblokb.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Melawai Raya No.197, RT.1/RW.6, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/yVZhoma66R4CFoTk9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Selatan</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Blok Q</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Perawan Maria Ratu</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.gerejasanta.org/" class="website" target="_blank">https://www.gerejasanta.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Suryo No.62, RT.1/RW.4, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/JthnD1aAo2wqLDw38" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Selatan</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cilandak</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Stefanus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.st-stefanus.or.id/" class="website" target="_blank">https://www.st-stefanus.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. KH Muhasim Raya No.2, RT.12/RW.6, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/4vp28WjiEAGREn548" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Selatan</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Jagakarsa</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Ratu Rosari</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokiraturosari.id/" class="website" target="_blank">https://parokiraturosari.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Sirsak No. 14 RT. 012 RW. 007 Jagakarsa, Jakarta Selatan 12620
+<br></br>
+Jl. Desa Putra No.7, RT.3/RW.5, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630
+</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/xAfcSQyUt13r7xBP8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Selatan</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pasar Minggu</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Keluarga Kudus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokipasarminggu.com/" class="website" target="_blank">https://parokipasarminggu.com/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Pertanian III No.23/26, RT.15/RW.5, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12520</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/YEybkLoLTy32KVPY8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Selatan</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Tebet</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Fransiskus Asisi</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokitebet.id/" class="website" target="_blank">https://parokitebet.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. K.H. Ramli Sel. No.24 3, RT.5/RW.3, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/9dc8j2vtW5tFtFR79" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cilincing</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Salib Suci</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokicilincing.org/" class="website" target="_blank">https://www.parokicilincing.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jalan Tugu Raya No.12, RT.3/RW.14, Tugu Utara, Kec. Koja, Jkt Utara, Daerah Khusus Ibukota Jakarta 14260</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/zBi6w9hxe1zQeTnt7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Danau Sunter</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Yohanes Bosco</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.st-yohanesbosco.org/" class="website" target="_blank">https://www.st-yohanesbosco.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Taman Sunter Indah No.13-21 Blok A3, RT.5/RW.14, Sunter Jaya, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta 14350</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/5yDRC8mS7QGrhR9q7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kelapa Gading</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Yakobus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://yakobus.or.id/" class="website" target="_blank">https://yakobus.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">TNI-AL Kodamar, Jl. Pulo Bira Besar, RT.15/RW.3, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/q66DagAUGTis7hyU9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pademangan</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Alfonsus Rodriguez</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokipademangan.org/" class="website" target="_blank">https://www.parokipademangan.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Pademangan Gg. 7 No.1, RT.1/RW.5, Pademangan Tim., Kec. Pademangan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14410</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/EhBKFqAKbY73nkuk6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pantai Indah Kapuk</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Regina Caeli</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokipik.org/" class="website" target="_blank">https://parokipik.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Mediterania Boulevard Pantai Indah Kapuk No.1, Kapuk Muara, Kec. Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14460</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/6a9YySTq2W8m5snM6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pluit</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Stella Maris</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.stellamarispluit.org/" class="website" target="_blank">https://www.stellamarispluit.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Taman Pluit Permai Timur No.17, Pluit, Kec. Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14450</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/rSunNYZSh5Qhqjwf6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Puspa Gading</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Andreas Kim Tae-gon</span></p>
+            <p><span class="field-label">Website:</span> <a href="#" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Puspa Gading Timur No.1 Blok H2, RT.5/RW.2, Pegangsaan Dua, Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14250</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/ecUVyZKXSmunnuDb9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Sunter</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Lukas</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokisantolukas.org/" class="website" target="_blank">https://www.parokisantolukas.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Ancol Sel. II No.8 14, RT.5/RW.7, Sunter Agung, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta 14350</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/mVXve4nFNvJwHGhb7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Utara</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Tanjung Priok</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Fransiskus Xaverius</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokitanjungpriok.org/vhome" class="website" target="_blank">https://www.parokitanjungpriok.org/vhome</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Melati No.1, RT.1/RW.12, Rawabadak Utara, Kec. Koja, Jkt Utara, Daerah Khusus Ibukota Jakarta 14230</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/MQJQ7DTAXz9sXNjT9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Bidaracina</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Antonius Padua</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://antonius-padua.or.id/" class="website" target="_blank">https://antonius-padua.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Otista Raya No. 76A, Bidaracina, RT.4/RW.5, Kampung Melayu, Jatinegara, Jl. Otista Raya No.76, RT.4/RW.5, Bidara Cina, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13330</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/aTeYdtqURopZDUBt7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cijantung</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Aloysius Gonzaga</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://aloysiusgonzagacijantung.org/" class="website" target="_blank">https://aloysiusgonzagacijantung.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Pendidikan III No.2 2, RT.2/RW.6, Cijantung, Kec. Ps. Rebo, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13770</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/9Ae31hH1pbBwUWD76" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cilangkap</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Yohanes Maria Vianney</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokivianney.org/" class="website" target="_blank">https://www.parokivianney.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Bambu Wulung, RT.5/RW.3, Setu, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13880</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/RoGTQRWNwuZXQfSg9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cililitan</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Robertus Bellarminus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokirobertusbellarminus.or.id/" class="website" target="_blank">https://parokirobertusbellarminus.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Kelapa Gading III No.38, RT.9/RW.1, Kramat Jati, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13510</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/zNAbwxgJXgSWrjpq6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Duren Sawit</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Anna</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokidurensawit.org/" class="website" target="_blank">https://parokidurensawit.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Laut Arafuru No.7 Blok A7, RT.8/RW.10, Pd. Bambu, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13430</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/72BG9LMBts9irVfi7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Halim Perdanakusuma</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Agustinus</span></p>
+            <p><span class="field-label">Website:</span> <a href="#" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Halilintar No.RT. 09, RT.9/RW.9, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13610</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/idgQSYgW9KvWJrVb9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Matraman</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Yoseph</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokimatraman.or.id/" class="website" target="_blank">https://www.parokimatraman.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl.Matraman Raya 127, Jakarta 13320</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/TDYALJLbL8wJnkEA6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pulo Gebang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Gabriel</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokipulogebang.org/" class="website" target="_blank">https://www.parokipulogebang.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Pulo Gebang Indah 2 No.1-2 Blok J6, RT.4/RW.11, Pulo Gebang, Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13950</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/WCAUaxPiSZFyo8X59" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pulomas</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Bonaventura</span></p>
+            <p><span class="field-label">Website:</span> <a href="#" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Pacuan Kuda Raya, Kayu Putih, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13210</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/JuaFkvoadd5y3niDA" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Jakarta Timur</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Rawamangun</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Keluarga Kudus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://keluargakudusrawamangun.org/" class="website" target="_blank">https://keluargakudusrawamangun.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Balai Pustaka Baru No.6, RT.6/RW.7, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/fG1yyS9u9jBMfcvs5" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Arnoldus Janssen</span></p>
+            <p><span class="field-label">Website:</span> <a href="#" class="website" target="_blank">N/A</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Insinyur H. Juanda No.164, RT.002/RW.009, Margahayu, Kec. Bekasi Tim., Kota Bks, Jawa Barat 17113</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/fG1yyS9u9jBMfcvs5" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Bekasi Utara</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Clara</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://gerejasantaclara.or.id/" class="website" target="_blank">https://gerejasantaclara.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Lkr. Utara, RT.03/RW.06, Harapan Baru, Kec. Bekasi Utara, Kota Bks, Jawa Barat 17123</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/oCvGUPkcBxRb6dpS6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Cikarang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Ibu Teresa</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokicikarang.or.id/" class="website" target="_blank">https://parokicikarang.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Aula Sekolah Katolik Trinitas
+Jl. Majapahit 52, Lippo Cikarang
+Kab. Bekasi 17550</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/MiUjCZGxJmSDQG498" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Harapan Indah</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Albertus Agung</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.santoalbertus.org/" class="website" target="_blank">https://www.santoalbertus.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Kota Harapan Indah, Pejuang, Jalan Boulevard Raya No.Kav 23, Medan Satria, RT.005/RW.010, Medan Satria, Kecamatan Medan Satria, Kota Bks, Jawa Barat 17131</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/iZfdvj3kYMgSjaiQ8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Jatiwaringin</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Leo Agung</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://leoagung.or.id/" class="website" target="_blank">https://leoagung.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Manunggal I, Cipinang Melayu, Kec. Makasar, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13620</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/mA8o7szUjbSqwsp36" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kampung Sawah</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Servatius</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.servatius.id/" class="website" target="_blank">https://www.servatius.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jln Raya Kampung Sawah
+RT 006 RW 04 No 75
+Kelurahan Jatimelati,
+Kecamatan Pondok Melati, Kota Bekasi 17415</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/jqGVfyP5tT9ti71c6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kranggan</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Stanislaus Kostka</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokikranggan.or.id/" class="website" target="_blank">https://parokikranggan.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Raya Ps. Kranggan No.7, RT.004/RW.004, Jatisampurna, Kec. Jatisampurna, Kota Bks, Jawa Barat 17433</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/kmXrbVKYdL9S589s7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kranji</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Mikael</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.stmikaelkranji.org/" class="website" target="_blank">https://www.stmikaelkranji.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Bintara Strada No.38, RT.001/RW.008, Kranji
+Kecamatan Bekasi Barat
+Kota Bekasi
+Jawa Barat 17135</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/jYhksymrmp75fLqP6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Lubang Buaya</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Kalvari</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://kalvari.org/" class="website" target="_blank">https://kalvari.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Masjid Al Umar No.1b, RT.3/RW.12, Lubang Buaya, Kec. Cipayung, Kota Jakarta Timur, Gorontalo 13810</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/Wsqy5BDtMzBnKHk3A" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Bekasi</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Taman Galaxi</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Bartolomeus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://sanbarto.org/" class="website" target="_blank">https://sanbarto.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Villa Galaxy, Jl. Gardenia Utara No.35 AA1, RT.003/RW.017, Jaka Setia, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17147</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/xzWRd7wCLyhWWrfS9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Citra Raya</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Odilia</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokicitraraya.org/" class="website" target="_blank">https://parokicitraraya.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Perumahan Citra Raya Jl. Citra Raya Utama Timur No.Kav. 31 Blok L2, Ciakar, Kec. Panongan, Kabupaten Tangerang, Banten 15710</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/mFUXZ4gcqgLY7ULMA" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Curug</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Helena</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokicurug.or.id/" class="website" target="_blank">https://www.parokicurug.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Taman Permata Lippo Karawaci Jl. Permata Kasih VI Blok C12 No. 1, Binong, Kec. Curug, Kabupaten Tangerang, Banten 15810</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/WXENZ7ng1bmHDDBh8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Karawaci</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Agustinus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://santoagustinus.id/" class="website" target="_blank">https://santoagustinus.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Prambanan Raya No.1, RT.001/RW.012, Cibodas Baru, Kec. Cibodas, Kota Tangerang, Banten 15138</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/7oog3VReyig4Zebf8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Kutabumi</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Gregorius Agung</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.parokikutabumi.id/" class="website" target="_blank">https://www.parokikutabumi.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Puri IV B 16 No. 93, Puri Agung Permai Gelam Jaya, Kuta Jaya, Kec. Ps. Kemis, Kabupaten Tangerang, Banten 15560</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/cCpfb2uKBbBRBQGi9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pinang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Bernadet</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://santabernadet.id/" class="website" target="_blank">https://santabernadet.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Boulevard Graha Raya No.Kav.12, RT.007/RW.004, Sudimara Pinang, Kec. Pinang, Kota Tangerang, Banten 15145</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/TAjjpfEFGaq4s81Y8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang I</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Tangerang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Hati Santa Perawan Maria Tak Bernoda</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://santamaria.or.id/" class="website" target="_blank">https://santamaria.or.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Daan Mogot No.14, RT.005/RW.005, Sukarasa, Kec. Tangerang, Kota Tangerang, Banten 15111</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/rgP5nNhzosGpHumB8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Alam Sutera</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Laurensius</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.santo-laurensius.org/" class="website" target="_blank">https://www.santo-laurensius.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Sutera Utama No.2, Pakulonan, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15326</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/xG65fkHLq4MtTu9N8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Bintaro</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Matius Penginjil</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokibintaro.org/profil-paroki/" class="website" target="_blank">https://parokibintaro.org/profil-paroki/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Utama I, Pd. Karya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15225</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/a4RLk7nS86Nxqhoe9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Bintaro Jaya</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Maria Regina</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokibintarojaya.id/" class="website" target="_blank">https://parokibintarojaya.id/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Moh. Husni Thamrin No.3 Kav B2, Bintaro Jaya, Cbd, South Tangerang City, Banten 15220</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/Lfek9G57BTtoWNrx6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Ciputat</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Nikodemus</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://www.nikodemus.org/" class="website" target="_blank">https://www.nikodemus.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Wijayakusuma II, Mabad, Komplek, Jl. Rempoa Raya No V 394, RT.1/RW.11, Rempoa, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/2Ha8Z6dGQjWKJbjZ7" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Pamulang</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santo Barnabas</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://santobarnabas.org/" class="website" target="_blank">https://santobarnabas.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Jl. Moh. Toha No.3, RT.002/RW.005, Pd. Cabe Udik, Kec. Pamulang, Kota Tangerang Selatan, Banten 15418</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/ELeJeRDKgq5DWE6i8" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Serpong</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Monika</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://parokiserpong-monika.org/" class="website" target="_blank">https://parokiserpong-monika.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Kompleks BSD, Blok V Jl. Alamanda No.1 Sektor 1.2, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15318</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/q3vV3RZ21aaXCbMc6" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+<div class="card">
+            <p><span class="field-label">Dekanat:</span> <span class="paroki">Tangerang II</span></p>
+            <p><span class="field-label">Paroki:</span> <span class="paroki">Villa Melati Mas</span></p>
+            <p><span class="field-label">Pelindung:</span> <span class="pelindung">Santa Ambrosius</span></p>
+            <p><span class="field-label">Website:</span> <a href="https://gereja.santoambrosius.org/" class="website" target="_blank">https://gereja.santoambrosius.org/</a></p>
+            <p><span class="field-label">Alamat:</span> <span class="alamat">Villa Melati Mas Blok O6 No. 26, Jelupang, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15323</span></p>
+            <p><span class="field-label">Map:</span> <a href="https://maps.app.goo.gl/AnziLDBrhfRQyJvf9" class="map" target="_blank">View Map</a></p>
+            <p><span class="field-label">Info:</span> <span class="info">TBA</span></p>
+        </div>
+
+
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            cards.forEach(card => {
+                const searchableContent = card.textContent.toLowerCase();
+                if (searchableContent.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
